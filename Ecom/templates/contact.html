@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>hello</h1>
+
+<p>this is Django Project</p>
+
+
+
+{% for i in list %}
+	{% if i == 2  %}
+		<p>ABC </p>
+	{%else%}
+		<li>{{ i }} </li>
+ 	{% endif %}
+{% endfor %}
+
+{% endblock content%}
